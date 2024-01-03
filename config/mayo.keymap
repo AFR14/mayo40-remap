@@ -35,11 +35,11 @@
             label = "SS_WINDOWS";
         };
 
-        pass_windows: pass_windows {
+        p_windows: p_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_1 &kp NUMBER_4 &kp N0 &kp NUMBER_1 &kp NUMBER_9 &kp NUMBER_7>;
-            label = "PASS_WINDOWS";
+            label = "P_WINDOWS";
         };
     };
 
@@ -57,8 +57,8 @@
 
         bluetooth {
             bindings = <
-&sys_reset   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &out OUT_TOG  &trans  &out OUT_USB  &kp UP_ARROW  &trans       &trans         &trans
-&bootloader  &trans        &trans        &trans        &trans        &trans        &trans  &kp LEFT      &kp DOWN      &kp RIGHT    &pass_windows
+&sys_reset   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &out OUT_TOG  &trans  &out OUT_USB  &kp UP_ARROW  &trans       &trans      &trans
+&bootloader  &trans        &trans        &trans        &trans        &trans        &trans  &kp LEFT      &kp DOWN      &kp RIGHT    &p_windows
 &trans       &trans        &trans        &bt BT_CLR    &trans        &out OUT_BLE  &trans  &trans        &trans        &ss_windows  &trans
 &trans       &trans        &trans        &trans        &trans
             >;
