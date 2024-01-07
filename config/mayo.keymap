@@ -61,28 +61,28 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE  &kp Q             &kp W        &kp E          &kp R          &kp T  &kp Y  &kp U  &kp I      &kp O    &kp P        &kp BACKSPACE
-&kp TAB     &kp A             &kp S        &kp D          &kp F          &kp G  &kp H  &kp J  &kp K      &kp L    &kp RET
-&kp LSHFT   &kp Z             &kp X        &kp C          &kp V          &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &lt 1 SLASH
-&kp LALT    &kp LEFT_CONTROL  &lt 2 SPACE  &kp RIGHT_ALT  &kp RIGHT_GUI
+&kp ESCAPE  &kp Q             &kp W        &kp E          &kp R  &kp T  &kp Y  &kp U  &kp I      &kp O    &kp P        &kp BACKSPACE
+&kp TAB     &kp A             &kp S        &kp D          &kp F  &kp G  &kp H  &kp J  &kp K      &kp L    &kp RET
+&kp LSHFT   &kp Z             &kp X        &kp C          &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &lt 1 SLASH
+&none       &kp LEFT_CONTROL  &lt 2 SPACE  &kp RIGHT_ALT  &none
             >;
         };
 
         bluetooth {
             bindings = <
-&sys_reset   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &out OUT_TOG  &trans  &out OUT_USB  &kp UP_ARROW  &trans       &trans      &trans
-&bootloader  &trans        &trans        &trans        &trans        &trans        &trans  &kp LEFT      &kp DOWN      &kp RIGHT    &p_windows
-&trans       &trans        &trans        &bt BT_CLR    &trans        &out OUT_BLE  &trans  &trans        &trans        &ss_windows  &trans
-&trans       &trans        &trans        &trans        &trans
+&bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_CLR    &trans  &out OUT_USB  &kp UP_ARROW  &trans       &trans      &trans
+&trans       &trans        &trans        &trans             &trans        &trans        &trans  &kp LEFT      &kp DOWN      &kp RIGHT    &p_windows
+&trans       &trans        &trans        &trans             &trans        &out OUT_BLE  &trans  &trans        &trans        &ss_windows  &trans
+&trans       &trans        &trans        &kp RIGHT_COMMAND  &trans
             >;
         };
 
         arrow {
             bindings = <
-&kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7     &kp F8     &kp F9     &kp F10           &kp F11            &kp DEL
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp COLON  &kp MINUS  &kp PLUS   &kp BACKSLASH     &kp F12
-&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp APOS   &kp UNDER  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &trans        &trans        &trans        &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7     &kp F8     &kp F9     &kp F10           &kp F11            &kp DEL
+&kp CAPSLOCK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp COLON  &kp MINUS  &kp PLUS   &kp BACKSLASH     &kp F12
+&trans        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp APOS   &kp UNDER  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans        &trans        &trans        &trans        &trans
             >;
         };
     };
