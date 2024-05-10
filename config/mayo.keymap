@@ -70,9 +70,9 @@
 
         bluetooth {
             bindings = <
-&bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_CLR    &trans  &out OUT_USB  &kp UP_ARROW  &trans       &trans      &trans
-&trans       &trans        &trans        &trans             &trans        &trans        &trans  &kp LEFT      &kp DOWN      &kp RIGHT    &p_windows
-&trans       &trans        &trans        &trans             &trans        &out OUT_BLE  &trans  &trans        &trans        &ss_windows  &trans
+&bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_CLR    &trans  &out OUT_USB  &kp UP_ARROW  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans
+&trans       &trans        &trans        &trans             &trans        &trans        &trans  &kp LEFT      &kp DOWN      &kp RIGHT     &p_windows
+&trans       &trans        &trans        &trans             &trans        &out OUT_BLE  &trans  &trans        &trans        &ss_windows   &trans
 &trans       &trans        &trans        &kp RIGHT_COMMAND  &trans
             >;
         };
